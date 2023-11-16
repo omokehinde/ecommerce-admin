@@ -92,7 +92,7 @@ export default function ProductForm({
                 onChange={ev=>setCategory(ev.target.value)}>
                 <option value=''>Uncategorized</option>
                 {categories.length > 0 && categories.map(c=>(
-                    <option value={c._id}>{c.name}</option>
+                    <option key={c._id} value={c._id}>{c.name}</option>
                 ))}
             </select>
             {propertiesToFill.length > 0 && propertiesToFill.map(p=>(

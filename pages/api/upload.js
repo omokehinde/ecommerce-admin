@@ -7,7 +7,7 @@ import { mongooseConnect } from '@/lib/mongoose';
 import { isAdminRequest } from './auth/[...nextauth]';
 
 
-const bucketName = "kenny-next-ecommerce";
+const bucketName = process.env.BUCKET_NAME;
 export default async function handle(req, res) {
     await mongooseConnect();
     await isAdminRequest(req,res);
