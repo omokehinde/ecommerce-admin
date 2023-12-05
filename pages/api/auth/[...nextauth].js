@@ -4,7 +4,7 @@ import { MongoDBAdapter } from "@auth/mongodb-adapter";
 
 import clientPromise from "../../../lib/mongodb";
 
-const adminEmails = ['engr.omokehinde@gmail.com'];
+const adminEmails = ['engr.omokehinde@gmail.com', 'gshavers313@gmail.com'];
 
 export const authOptions = {
   // Configure one or more authentication providers
